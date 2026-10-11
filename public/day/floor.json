@@ -1,0 +1,2413 @@
+{
+ "kind": "SIMULATION",
+ "note": "Simulated day from the scenario engine. DNA's effect is modelled through the stated assumptions; edit them to see the impact.",
+ "assumptions": {
+  "bays": 4,
+  "open_hours": 9.0,
+  "arrivals": 38,
+  "labour_rate_usd_h": 20.0,
+  "working_days_month": 26,
+  "bay_turnover_min_without": [
+   10.0,
+   40.0
+  ],
+  "bay_turnover_min_with": 4.0,
+  "parts_wait_move_min_without": null,
+  "parts_wait_move_min_with": 10.0,
+  "ready_notice_min_without": 45.0,
+  "ready_notice_min_with": 1.0,
+  "calls_per_visit_without": 1.5,
+  "flag_recall_with": 0.8,
+  "seed": 7
+ },
+ "cars": [
+  {
+   "car": "car00",
+   "plate": "95C657SL",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "air_filter",
+    "brake_fluid",
+    "wash",
+    "wheel_alignment"
+   ],
+   "phantom_lines": [
+    "wheel_alignment"
+   ],
+   "arrival_s": 96.7915539898087,
+   "bay_work_s": 2791.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 985.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car01",
+   "plate": "60E519OY",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 136.47669433969685,
+   "bay_work_s": 1446.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 781.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car02",
+   "plate": "25M960XW",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 305.70114206175185,
+   "bay_work_s": 2065.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 1069.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car03",
+   "plate": "01I710LC",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "air_filter",
+    "brake_fluid"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 924.832825811612,
+   "bay_work_s": 2815.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car04",
+   "plate": "80I419MA",
+   "job": "chassis_diagnostics",
+   "lines": [
+    "chassis_diagnostics"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 1138.976846359057,
+   "bay_work_s": 1174.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "suv"
+  },
+  {
+   "car": "car05",
+   "plate": "40A986NV",
+   "job": "tyre_change",
+   "lines": [
+    "seasonal_tyre_change",
+    "oil_filter_change"
+   ],
+   "phantom_lines": [
+    "oil_filter_change"
+   ],
+   "arrival_s": 4152.695917595331,
+   "bay_work_s": 2018.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car06",
+   "plate": "50K054SN",
+   "job": "repair_parts_wait",
+   "lines": [
+    "chassis_diagnostics",
+    "suspension_tightening"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 4987.063572099251,
+   "bay_work_s": 3714.0,
+   "parts_wait_s": 5881.0,
+   "wash_s": 1057.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car07",
+   "plate": "30Q292GL",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "cabin_filter",
+    "air_filter"
+   ],
+   "phantom_lines": [
+    "air_filter"
+   ],
+   "arrival_s": 5199.726285742915,
+   "bay_work_s": 1440.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car08",
+   "plate": "60I516SU",
+   "job": "tyre_change",
+   "lines": [
+    "seasonal_tyre_change",
+    "wiper_blades"
+   ],
+   "phantom_lines": [
+    "wiper_blades"
+   ],
+   "arrival_s": 5580.801458266725,
+   "bay_work_s": 1303.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "taxi"
+  },
+  {
+   "car": "car09",
+   "plate": "50V671EP",
+   "job": "chassis_diagnostics",
+   "lines": [
+    "chassis_diagnostics",
+    "hv_battery_inspection"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 5837.370364556141,
+   "bay_work_s": 2077.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "taxi"
+  },
+  {
+   "car": "car10",
+   "plate": "20W504CF",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads",
+    "brake_fluid"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 6415.5867789484155,
+   "bay_work_s": 2288.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "suv"
+  },
+  {
+   "car": "car11",
+   "plate": "40H769JS",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads",
+    "brake_fluid"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 6606.21971199491,
+   "bay_work_s": 2576.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 1014.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car12",
+   "plate": "50T846RQ",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads",
+    "brake_fluid",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 7216.791865652044,
+   "bay_work_s": 2614.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 834.0,
+   "vehicle": "taxi"
+  },
+  {
+   "car": "car13",
+   "plate": "20V333OB",
+   "job": "chassis_diagnostics",
+   "lines": [
+    "chassis_diagnostics",
+    "hv_battery_inspection",
+    "wash",
+    "oil_filter_change"
+   ],
+   "phantom_lines": [
+    "oil_filter_change"
+   ],
+   "arrival_s": 7780.310104898963,
+   "bay_work_s": 2162.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 599.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car14",
+   "plate": "90W982KX",
+   "job": "tyre_change",
+   "lines": [
+    "seasonal_tyre_change",
+    "brake_pads"
+   ],
+   "phantom_lines": [
+    "brake_pads"
+   ],
+   "arrival_s": 7854.6005031566065,
+   "bay_work_s": 2502.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 701.0,
+   "vehicle": "suv"
+  },
+  {
+   "car": "car15",
+   "plate": "70U581HT",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "coolant_check"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 9578.381170809198,
+   "bay_work_s": 1562.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 885.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car16",
+   "plate": "90W469KV",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 11536.3778484782,
+   "bay_work_s": 3012.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 1118.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car17",
+   "plate": "01R771HT",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 12084.060176431494,
+   "bay_work_s": 4431.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 742.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car18",
+   "plate": "01H828XM",
+   "job": "repair_parts_wait",
+   "lines": [
+    "chassis_diagnostics",
+    "suspension_tightening"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 12128.873977709243,
+   "bay_work_s": 2709.0,
+   "parts_wait_s": 2479.0,
+   "wash_s": 0.0,
+   "vehicle": "taxi"
+  },
+  {
+   "car": "car19",
+   "plate": "50M597KT",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "air_filter",
+    "coolant_check",
+    "computer_diagnostics",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 12878.95944539963,
+   "bay_work_s": 3406.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 844.0,
+   "vehicle": "suv"
+  },
+  {
+   "car": "car20",
+   "plate": "40I379MI",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "air_filter",
+    "coolant_check",
+    "cabin_filter",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 13077.89087219015,
+   "bay_work_s": 2693.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 1324.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car21",
+   "plate": "50R224MJ",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 13325.9293998594,
+   "bay_work_s": 3288.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car22",
+   "plate": "50U679MW",
+   "job": "chassis_diagnostics",
+   "lines": [
+    "chassis_diagnostics",
+    "suspension_tightening",
+    "computer_diagnostics"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 13345.918221433918,
+   "bay_work_s": 2523.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 647.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car23",
+   "plate": "85Q640ZY",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 14346.651365770846,
+   "bay_work_s": 2243.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 921.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car24",
+   "plate": "20J066AL",
+   "job": "chassis_diagnostics",
+   "lines": [
+    "chassis_diagnostics",
+    "computer_diagnostics",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 15877.026542756957,
+   "bay_work_s": 3500.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 940.0,
+   "vehicle": "taxi"
+  },
+  {
+   "car": "car25",
+   "plate": "60M351EB",
+   "job": "express_maintenance",
+   "lines": [
+    "hv_battery_inspection",
+    "coolant_check",
+    "cabin_filter",
+    "computer_diagnostics",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 16126.885627114936,
+   "bay_work_s": 1636.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 557.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car26",
+   "plate": "20D651VZ",
+   "job": "brake_pads",
+   "lines": [
+    "brake_pads"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 16202.474494392967,
+   "bay_work_s": 2672.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car27",
+   "plate": "01A251IF",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "coolant_check",
+    "computer_diagnostics",
+    "wiper_blades",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 16309.54451640699,
+   "bay_work_s": 2384.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 705.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car28",
+   "plate": "50M972FA",
+   "job": "tyre_change",
+   "lines": [
+    "seasonal_tyre_change",
+    "oil_filter_change"
+   ],
+   "phantom_lines": [
+    "oil_filter_change"
+   ],
+   "arrival_s": 17937.472573257273,
+   "bay_work_s": 1368.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 1234.0,
+   "vehicle": "taxi"
+  },
+  {
+   "car": "car29",
+   "plate": "30S736UI",
+   "job": "express_maintenance",
+   "lines": [
+    "oil_filter_change",
+    "battery_12v_check"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 20105.773091155417,
+   "bay_work_s": 1330.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 723.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car30",
+   "plate": "50V694MX",
+   "job": "tyre_change",
+   "lines": [
+    "tyre_rotation"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 20545.79694602048,
+   "bay_work_s": 1106.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 0.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car31",
+   "plate": "25R634KK",
+   "job": "repair_parts_wait",
+   "lines": [
+    "chassis_diagnostics",
+    "brake_pads",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 20660.039593253037,
+   "bay_work_s": 3451.0,
+   "parts_wait_s": 2272.0,
+   "wash_s": 1137.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car32",
+   "plate": "80W703IU",
+   "job": "tyre_change",
+   "lines": [
+    "tyre_rotation",
+    "wheel_alignment",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 21286.240604481303,
+   "bay_work_s": 2477.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 742.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car33",
+   "plate": "60C802QW",
+   "job": "repair_parts_wait",
+   "lines": [
+    "chassis_diagnostics",
+    "brake_pads",
+    "wash",
+    "air_filter"
+   ],
+   "phantom_lines": [
+    "air_filter"
+   ],
+   "arrival_s": 22642.505304671107,
+   "bay_work_s": 2922.0,
+   "parts_wait_s": 4256.0,
+   "wash_s": 838.0,
+   "vehicle": "hatchback-sports"
+  },
+  {
+   "car": "car34",
+   "plate": "01N884BJ",
+   "job": "tyre_change",
+   "lines": [
+    "seasonal_tyre_change"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 23255.781721131396,
+   "bay_work_s": 2471.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 713.0,
+   "vehicle": "sedan"
+  },
+  {
+   "car": "car35",
+   "plate": "40I019VN",
+   "job": "chassis_diagnostics",
+   "lines": [
+    "chassis_diagnostics"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 23772.98868115873,
+   "bay_work_s": 1024.0,
+   "parts_wait_s": 0.0,
+   "wash_s": 1062.0,
+   "vehicle": "suv"
+  },
+  {
+   "car": "car36",
+   "plate": "40L310EV",
+   "job": "repair_parts_wait",
+   "lines": [
+    "chassis_diagnostics",
+    "suspension_tightening",
+    "wash"
+   ],
+   "phantom_lines": [],
+   "arrival_s": 25633.847027914457,
+   "bay_work_s": 2182.0,
+   "parts_wait_s": 1353.0,
+   "wash_s": 513.0,
+   "vehicle": "suv"
+  },
+  {
+   "car": "car37",
+   "plate": "80K291AL",
+   "job": "repair_parts_wait",
+   "lines": [
+    "chassis_diagnostics",
+    "brake_pads",
+    "wiper_blades"
+   ],
+   "phantom_lines": [
+    "wiper_blades"
+   ],
+   "arrival_s": 25803.36734661946,
+   "bay_work_s": 3955.0,
+   "parts_wait_s": 3219.0,
+   "wash_s": 1005.0,
+   "vehicle": "hatchback-sports"
+  }
+ ],
+ "without": {
+  "with_dna": false,
+  "schedule": [
+   {
+    "car": "car00",
+    "plate": "95C657SL",
+    "vehicle": "sedan",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "air_filter",
+     "brake_fluid",
+     "wash",
+     "wheel_alignment"
+    ],
+    "arrival_s": 96.7915539898087,
+    "bay": 1,
+    "bay_start_s": 396.7915539898087,
+    "work_end_s": 3187.7915539898086,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 4912.963393878209,
+    "ready_s": 4172.791553989809,
+    "notified_s": 6940.8405943860525,
+    "pickup_s": 8140.8405943860525,
+    "phantom_lines": [
+     "wheel_alignment"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car01",
+    "plate": "60E519OY",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "wash"
+    ],
+    "arrival_s": 136.47669433969685,
+    "bay": 3,
+    "bay_start_s": 436.47669433969685,
+    "work_end_s": 1882.476694339697,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 3878.7109367810453,
+    "ready_s": 2663.476694339697,
+    "notified_s": 5080.2733260466375,
+    "pickup_s": 6280.2733260466375,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car02",
+    "plate": "25M960XW",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 305.70114206175185,
+    "bay": 5,
+    "bay_start_s": 605.7011420617519,
+    "work_end_s": 2670.701142061752,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 3811.0004549019577,
+    "ready_s": 3739.701142061752,
+    "notified_s": 12875.521990939636,
+    "pickup_s": 14075.521990939636,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car03",
+    "plate": "01I710LC",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "air_filter",
+     "brake_fluid"
+    ],
+    "arrival_s": 924.832825811612,
+    "bay": 6,
+    "bay_start_s": 1224.832825811612,
+    "work_end_s": 4039.832825811612,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 4649.3103740296465,
+    "ready_s": 4039.832825811612,
+    "notified_s": 11624.715386210728,
+    "pickup_s": 12824.715386210728,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car04",
+    "plate": "80I419MA",
+    "vehicle": "suv",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics"
+    ],
+    "arrival_s": 1138.976846359057,
+    "bay": 5,
+    "bay_start_s": 3811.0004549019577,
+    "work_end_s": 4985.000454901958,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 7019.725426655641,
+    "ready_s": 4985.000454901958,
+    "notified_s": 5796.4422888000645,
+    "pickup_s": 6996.4422888000645,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car05",
+    "plate": "40A986NV",
+    "vehicle": "sedan",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change",
+     "oil_filter_change"
+    ],
+    "arrival_s": 4152.695917595331,
+    "bay": 3,
+    "bay_start_s": 4452.695917595331,
+    "work_end_s": 6470.695917595331,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 7616.154285870095,
+    "ready_s": 6470.695917595331,
+    "notified_s": 7313.489070132394,
+    "pickup_s": 8513.489070132393,
+    "phantom_lines": [
+     "oil_filter_change"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car06",
+    "plate": "50K054SN",
+    "vehicle": "hatchback-sports",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "suspension_tightening"
+    ],
+    "arrival_s": 4987.063572099251,
+    "bay": 6,
+    "bay_start_s": 5287.063572099251,
+    "work_end_s": 9001.06357209925,
+    "parts_wait_s": 5881.0,
+    "in_bay_wait_s": 5881.0,
+    "bay_free_s": 15940.828829876675,
+    "ready_s": 15939.06357209925,
+    "notified_s": 18838.05535872876,
+    "pickup_s": 20038.05535872876,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car07",
+    "plate": "30Q292GL",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "cabin_filter",
+     "air_filter"
+    ],
+    "arrival_s": 5199.726285742915,
+    "bay": 1,
+    "bay_start_s": 5499.726285742915,
+    "work_end_s": 6939.726285742915,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 8447.913151867231,
+    "ready_s": 6939.726285742915,
+    "notified_s": 7539.318694175686,
+    "pickup_s": 8739.318694175687,
+    "phantom_lines": [
+     "air_filter"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car08",
+    "plate": "60I516SU",
+    "vehicle": "taxi",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change",
+     "wiper_blades"
+    ],
+    "arrival_s": 5580.801458266725,
+    "bay": 5,
+    "bay_start_s": 7019.725426655641,
+    "work_end_s": 8322.725426655641,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 10714.625936837549,
+    "ready_s": 8322.725426655641,
+    "notified_s": 13259.039035922218,
+    "pickup_s": 14459.039035922218,
+    "phantom_lines": [
+     "wiper_blades"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car09",
+    "plate": "50V671EP",
+    "vehicle": "taxi",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics",
+     "hv_battery_inspection"
+    ],
+    "arrival_s": 5837.370364556141,
+    "bay": 3,
+    "bay_start_s": 7616.154285870095,
+    "work_end_s": 9693.154285870096,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 11413.076898864188,
+    "ready_s": 9693.154285870096,
+    "notified_s": 11679.968924717796,
+    "pickup_s": 12879.968924717796,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car10",
+    "plate": "20W504CF",
+    "vehicle": "suv",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "brake_fluid"
+    ],
+    "arrival_s": 6415.5867789484155,
+    "bay": 1,
+    "bay_start_s": 8447.913151867231,
+    "work_end_s": 10735.913151867231,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 11624.294812811351,
+    "ready_s": 10735.913151867231,
+    "notified_s": 13121.538981923353,
+    "pickup_s": 14321.538981923353,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car11",
+    "plate": "40H769JS",
+    "vehicle": "hatchback-sports",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "brake_fluid"
+    ],
+    "arrival_s": 6606.21971199491,
+    "bay": 5,
+    "bay_start_s": 10714.625936837549,
+    "work_end_s": 13290.625936837549,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 13969.721551168039,
+    "ready_s": 14304.625936837549,
+    "notified_s": 14466.75106399865,
+    "pickup_s": 15666.75106399865,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car12",
+    "plate": "50T846RQ",
+    "vehicle": "taxi",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "brake_fluid",
+     "wash"
+    ],
+    "arrival_s": 7216.791865652044,
+    "bay": 3,
+    "bay_start_s": 11413.076898864188,
+    "work_end_s": 14027.076898864188,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 15553.876775352655,
+    "ready_s": 14861.076898864188,
+    "notified_s": 16947.922156653425,
+    "pickup_s": 18147.922156653425,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car13",
+    "plate": "20V333OB",
+    "vehicle": "hatchback-sports",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics",
+     "hv_battery_inspection",
+     "wash",
+     "oil_filter_change"
+    ],
+    "arrival_s": 7780.310104898963,
+    "bay": 1,
+    "bay_start_s": 11624.294812811351,
+    "work_end_s": 13786.294812811351,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 16037.196804558485,
+    "ready_s": 14385.294812811351,
+    "notified_s": 15668.210353242072,
+    "pickup_s": 16868.210353242073,
+    "phantom_lines": [
+     "oil_filter_change"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car14",
+    "plate": "90W982KX",
+    "vehicle": "suv",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change",
+     "brake_pads"
+    ],
+    "arrival_s": 7854.6005031566065,
+    "bay": 5,
+    "bay_start_s": 13969.721551168039,
+    "work_end_s": 16471.72155116804,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 17997.133315047166,
+    "ready_s": 17172.72155116804,
+    "notified_s": 20360.76057900383,
+    "pickup_s": 21560.76057900383,
+    "phantom_lines": [
+     "brake_pads"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car15",
+    "plate": "70U581HT",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "coolant_check"
+    ],
+    "arrival_s": 9578.381170809198,
+    "bay": 3,
+    "bay_start_s": 15553.876775352655,
+    "work_end_s": 17115.876775352655,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 18161.40363500185,
+    "ready_s": 18000.876775352655,
+    "notified_s": 18060.73343456908,
+    "pickup_s": 19260.73343456908,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car16",
+    "plate": "90W469KV",
+    "vehicle": "hatchback-sports",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 11536.3778484782,
+    "bay": 6,
+    "bay_start_s": 15940.828829876675,
+    "work_end_s": 18952.828829876675,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 19899.152689050235,
+    "ready_s": 20070.828829876675,
+    "notified_s": 22809.327226022444,
+    "pickup_s": 24009.327226022444,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car17",
+    "plate": "01R771HT",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 12084.060176431494,
+    "bay": 1,
+    "bay_start_s": 16037.196804558485,
+    "work_end_s": 20468.196804558487,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 21429.288907735077,
+    "ready_s": 21210.196804558487,
+    "notified_s": 24980.957024673207,
+    "pickup_s": 26180.957024673207,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car18",
+    "plate": "01H828XM",
+    "vehicle": "taxi",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "suspension_tightening"
+    ],
+    "arrival_s": 12128.873977709243,
+    "bay": 5,
+    "bay_start_s": 17997.133315047166,
+    "work_end_s": 20706.133315047166,
+    "parts_wait_s": 2479.0,
+    "in_bay_wait_s": 2479.0,
+    "bay_free_s": 23791.8549507409,
+    "ready_s": 23185.133315047166,
+    "notified_s": 25625.476045506868,
+    "pickup_s": 26825.476045506868,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car19",
+    "plate": "50M597KT",
+    "vehicle": "suv",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "air_filter",
+     "coolant_check",
+     "computer_diagnostics",
+     "wash"
+    ],
+    "arrival_s": 12878.95944539963,
+    "bay": 3,
+    "bay_start_s": 18161.40363500185,
+    "work_end_s": 21567.40363500185,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 22445.433580912442,
+    "ready_s": 22411.40363500185,
+    "notified_s": 23371.59870414917,
+    "pickup_s": 24571.59870414917,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car20",
+    "plate": "40I379MI",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "air_filter",
+     "coolant_check",
+     "cabin_filter",
+     "wash"
+    ],
+    "arrival_s": 13077.89087219015,
+    "bay": 6,
+    "bay_start_s": 19899.152689050235,
+    "work_end_s": 22592.152689050235,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 24776.750566215727,
+    "ready_s": 23916.152689050235,
+    "notified_s": 27708.09287885798,
+    "pickup_s": 28908.09287885798,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car21",
+    "plate": "50R224MJ",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads"
+    ],
+    "arrival_s": 13325.9293998594,
+    "bay": 1,
+    "bay_start_s": 21429.288907735077,
+    "work_end_s": 24717.288907735077,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 26842.159351193644,
+    "ready_s": 24717.288907735077,
+    "notified_s": 29437.1567854752,
+    "pickup_s": 30637.1567854752,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car22",
+    "plate": "50U679MW",
+    "vehicle": "hatchback-sports",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics",
+     "suspension_tightening",
+     "computer_diagnostics"
+    ],
+    "arrival_s": 13345.918221433918,
+    "bay": 3,
+    "bay_start_s": 22445.433580912442,
+    "work_end_s": 24968.433580912442,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 26903.621286163787,
+    "ready_s": 25615.433580912442,
+    "notified_s": 26006.78917696642,
+    "pickup_s": 27206.78917696642,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car23",
+    "plate": "85Q640ZY",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 14346.651365770846,
+    "bay": 5,
+    "bay_start_s": 23791.8549507409,
+    "work_end_s": 26034.8549507409,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 27608.91382921858,
+    "ready_s": 26955.8549507409,
+    "notified_s": 27600.54596116367,
+    "pickup_s": 28800.54596116367,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car24",
+    "plate": "20J066AL",
+    "vehicle": "taxi",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics",
+     "computer_diagnostics",
+     "wash"
+    ],
+    "arrival_s": 15877.026542756957,
+    "bay": 6,
+    "bay_start_s": 24776.750566215727,
+    "work_end_s": 28276.750566215727,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 30445.161444262914,
+    "ready_s": 29216.750566215727,
+    "notified_s": 32519.53341757005,
+    "pickup_s": 33719.53341757005,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car25",
+    "plate": "60M351EB",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "hv_battery_inspection",
+     "coolant_check",
+     "cabin_filter",
+     "computer_diagnostics",
+     "wash"
+    ],
+    "arrival_s": 16126.885627114936,
+    "bay": 1,
+    "bay_start_s": 26842.159351193644,
+    "work_end_s": 28478.159351193644,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 30154.890672166628,
+    "ready_s": 29035.159351193644,
+    "notified_s": 30071.566678031144,
+    "pickup_s": 31271.566678031144,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car26",
+    "plate": "20D651VZ",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads"
+    ],
+    "arrival_s": 16202.474494392967,
+    "bay": 3,
+    "bay_start_s": 26903.621286163787,
+    "work_end_s": 29575.621286163787,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 30873.3585281631,
+    "ready_s": 29575.621286163787,
+    "notified_s": 29761.11298108188,
+    "pickup_s": 30961.11298108188,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car27",
+    "plate": "01A251IF",
+    "vehicle": "sedan",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "coolant_check",
+     "computer_diagnostics",
+     "wiper_blades",
+     "wash"
+    ],
+    "arrival_s": 16309.54451640699,
+    "bay": 5,
+    "bay_start_s": 27608.91382921858,
+    "work_end_s": 29992.91382921858,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 30863.273341545395,
+    "ready_s": 30697.91382921858,
+    "notified_s": 33050.71886773619,
+    "pickup_s": 34250.71886773619,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car28",
+    "plate": "50M972FA",
+    "vehicle": "taxi",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change",
+     "oil_filter_change"
+    ],
+    "arrival_s": 17937.472573257273,
+    "bay": 1,
+    "bay_start_s": 30154.890672166628,
+    "work_end_s": 31522.890672166628,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 32805.89378095719,
+    "ready_s": 32756.890672166628,
+    "notified_s": 40037.04042525087,
+    "pickup_s": 41237.04042525087,
+    "phantom_lines": [
+     "oil_filter_change"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car29",
+    "plate": "30S736UI",
+    "vehicle": "sedan",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "battery_12v_check"
+    ],
+    "arrival_s": 20105.773091155417,
+    "bay": 6,
+    "bay_start_s": 30445.161444262914,
+    "work_end_s": 31775.161444262914,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 33437.14649168201,
+    "ready_s": 32498.161444262914,
+    "notified_s": 36024.55569462253,
+    "pickup_s": 37224.55569462253,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car30",
+    "plate": "50V694MX",
+    "vehicle": "sedan",
+    "job": "tyre_change",
+    "lines": [
+     "tyre_rotation"
+    ],
+    "arrival_s": 20545.79694602048,
+    "bay": 5,
+    "bay_start_s": 30863.273341545395,
+    "work_end_s": 31969.273341545395,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 33717.66718696439,
+    "ready_s": 31969.273341545395,
+    "notified_s": 34499.33128140782,
+    "pickup_s": 35699.33128140782,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car31",
+    "plate": "25R634KK",
+    "vehicle": "hatchback-sports",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 20660.039593253037,
+    "bay": 3,
+    "bay_start_s": 30873.3585281631,
+    "work_end_s": 34324.358528163095,
+    "parts_wait_s": 2272.0,
+    "in_bay_wait_s": 2272.0,
+    "bay_free_s": 37467.77696266616,
+    "ready_s": 37733.358528163095,
+    "notified_s": 44469.84963798672,
+    "pickup_s": 45669.84963798672,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car32",
+    "plate": "80W703IU",
+    "vehicle": "sedan",
+    "arrival_s": 21286.240604481303,
+    "served": false
+   },
+   {
+    "car": "car33",
+    "plate": "60C802QW",
+    "vehicle": "hatchback-sports",
+    "arrival_s": 22642.505304671107,
+    "served": false
+   },
+   {
+    "car": "car34",
+    "plate": "01N884BJ",
+    "vehicle": "sedan",
+    "arrival_s": 23255.781721131396,
+    "served": false
+   },
+   {
+    "car": "car35",
+    "plate": "40I019VN",
+    "vehicle": "suv",
+    "arrival_s": 23772.98868115873,
+    "served": false
+   },
+   {
+    "car": "car36",
+    "plate": "40L310EV",
+    "vehicle": "suv",
+    "arrival_s": 25633.847027914457,
+    "served": false
+   },
+   {
+    "car": "car37",
+    "plate": "80K291AL",
+    "vehicle": "hatchback-sports",
+    "arrival_s": 25803.36734661946,
+    "served": false
+   }
+  ],
+  "metrics": {
+   "cars_served": 32,
+   "cars_not_served": 6,
+   "bay_productive_share": 0.589,
+   "bay_blocked_hours": 15.7,
+   "avg_time_at_dealer_h": 3.52,
+   "avg_ready_to_notified_min": 46.6,
+   "status_calls": 48,
+   "unperformed_paid_lines": 7,
+   "flagged_before_handover": 0
+  }
+ },
+ "with": {
+  "with_dna": true,
+  "schedule": [
+   {
+    "car": "car00",
+    "plate": "95C657SL",
+    "vehicle": "sedan",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "air_filter",
+     "brake_fluid",
+     "wash",
+     "wheel_alignment"
+    ],
+    "arrival_s": 96.7915539898087,
+    "bay": 1,
+    "bay_start_s": 396.7915539898087,
+    "work_end_s": 3187.7915539898086,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 3427.7915539898086,
+    "ready_s": 4172.791553989809,
+    "notified_s": 4232.791553989809,
+    "pickup_s": 5432.791553989809,
+    "phantom_lines": [
+     "wheel_alignment"
+    ],
+    "flagged_before_handover": [
+     "wheel_alignment"
+    ],
+    "served": true
+   },
+   {
+    "car": "car01",
+    "plate": "60E519OY",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "wash"
+    ],
+    "arrival_s": 136.47669433969685,
+    "bay": 3,
+    "bay_start_s": 436.47669433969685,
+    "work_end_s": 1882.476694339697,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 2122.476694339697,
+    "ready_s": 2663.476694339697,
+    "notified_s": 2723.476694339697,
+    "pickup_s": 3923.476694339697,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car02",
+    "plate": "25M960XW",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 305.70114206175185,
+    "bay": 5,
+    "bay_start_s": 605.7011420617519,
+    "work_end_s": 2670.701142061752,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 2910.701142061752,
+    "ready_s": 3739.701142061752,
+    "notified_s": 3799.701142061752,
+    "pickup_s": 4999.701142061752,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car03",
+    "plate": "01I710LC",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "air_filter",
+     "brake_fluid"
+    ],
+    "arrival_s": 924.832825811612,
+    "bay": 6,
+    "bay_start_s": 1224.832825811612,
+    "work_end_s": 4039.832825811612,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 4279.832825811613,
+    "ready_s": 4039.832825811612,
+    "notified_s": 4099.832825811613,
+    "pickup_s": 5299.832825811613,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car04",
+    "plate": "80I419MA",
+    "vehicle": "suv",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics"
+    ],
+    "arrival_s": 1138.976846359057,
+    "bay": 3,
+    "bay_start_s": 2122.476694339697,
+    "work_end_s": 3296.476694339697,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 3536.476694339697,
+    "ready_s": 3296.476694339697,
+    "notified_s": 3356.476694339697,
+    "pickup_s": 4556.476694339697,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car05",
+    "plate": "40A986NV",
+    "vehicle": "sedan",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change",
+     "oil_filter_change"
+    ],
+    "arrival_s": 4152.695917595331,
+    "bay": 5,
+    "bay_start_s": 4452.695917595331,
+    "work_end_s": 6470.695917595331,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 6710.695917595331,
+    "ready_s": 6470.695917595331,
+    "notified_s": 6530.695917595331,
+    "pickup_s": 7730.695917595331,
+    "phantom_lines": [
+     "oil_filter_change"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car06",
+    "plate": "50K054SN",
+    "vehicle": "hatchback-sports",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "suspension_tightening"
+    ],
+    "arrival_s": 4987.063572099251,
+    "bay": 1,
+    "bay_start_s": 5287.063572099251,
+    "work_end_s": 9001.06357209925,
+    "parts_wait_s": 5881.0,
+    "in_bay_wait_s": 600.0,
+    "bay_free_s": 9841.06357209925,
+    "ready_s": 15939.06357209925,
+    "notified_s": 15999.06357209925,
+    "pickup_s": 17199.06357209925,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car07",
+    "plate": "30Q292GL",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "cabin_filter",
+     "air_filter"
+    ],
+    "arrival_s": 5199.726285742915,
+    "bay": 3,
+    "bay_start_s": 5499.726285742915,
+    "work_end_s": 6939.726285742915,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 7179.726285742915,
+    "ready_s": 6939.726285742915,
+    "notified_s": 6999.726285742915,
+    "pickup_s": 8199.726285742916,
+    "phantom_lines": [
+     "air_filter"
+    ],
+    "flagged_before_handover": [
+     "air_filter"
+    ],
+    "served": true
+   },
+   {
+    "car": "car08",
+    "plate": "60I516SU",
+    "vehicle": "taxi",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change",
+     "wiper_blades"
+    ],
+    "arrival_s": 5580.801458266725,
+    "bay": 6,
+    "bay_start_s": 5880.801458266725,
+    "work_end_s": 7183.801458266725,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 7423.801458266725,
+    "ready_s": 7183.801458266725,
+    "notified_s": 7243.801458266725,
+    "pickup_s": 8443.801458266724,
+    "phantom_lines": [
+     "wiper_blades"
+    ],
+    "flagged_before_handover": [
+     "wiper_blades"
+    ],
+    "served": true
+   },
+   {
+    "car": "car09",
+    "plate": "50V671EP",
+    "vehicle": "taxi",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics",
+     "hv_battery_inspection"
+    ],
+    "arrival_s": 5837.370364556141,
+    "bay": 5,
+    "bay_start_s": 6710.695917595331,
+    "work_end_s": 8787.69591759533,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 9027.69591759533,
+    "ready_s": 8787.69591759533,
+    "notified_s": 8847.69591759533,
+    "pickup_s": 10047.69591759533,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car10",
+    "plate": "20W504CF",
+    "vehicle": "suv",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "brake_fluid"
+    ],
+    "arrival_s": 6415.5867789484155,
+    "bay": 3,
+    "bay_start_s": 7179.726285742915,
+    "work_end_s": 9467.726285742916,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 9707.726285742916,
+    "ready_s": 9467.726285742916,
+    "notified_s": 9527.726285742916,
+    "pickup_s": 10727.726285742916,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car11",
+    "plate": "40H769JS",
+    "vehicle": "hatchback-sports",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "brake_fluid"
+    ],
+    "arrival_s": 6606.21971199491,
+    "bay": 6,
+    "bay_start_s": 7423.801458266725,
+    "work_end_s": 9999.801458266724,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 10239.801458266724,
+    "ready_s": 11013.801458266724,
+    "notified_s": 11073.801458266724,
+    "pickup_s": 12273.801458266724,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car12",
+    "plate": "50T846RQ",
+    "vehicle": "taxi",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "brake_fluid",
+     "wash"
+    ],
+    "arrival_s": 7216.791865652044,
+    "bay": 5,
+    "bay_start_s": 9027.69591759533,
+    "work_end_s": 11641.69591759533,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 11881.69591759533,
+    "ready_s": 12475.69591759533,
+    "notified_s": 12535.69591759533,
+    "pickup_s": 13735.69591759533,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car13",
+    "plate": "20V333OB",
+    "vehicle": "hatchback-sports",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics",
+     "hv_battery_inspection",
+     "wash",
+     "oil_filter_change"
+    ],
+    "arrival_s": 7780.310104898963,
+    "bay": 3,
+    "bay_start_s": 9707.726285742916,
+    "work_end_s": 11869.726285742916,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 12109.726285742916,
+    "ready_s": 12468.726285742916,
+    "notified_s": 12528.726285742916,
+    "pickup_s": 13728.726285742916,
+    "phantom_lines": [
+     "oil_filter_change"
+    ],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car14",
+    "plate": "90W982KX",
+    "vehicle": "suv",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change",
+     "brake_pads"
+    ],
+    "arrival_s": 7854.6005031566065,
+    "bay": 1,
+    "bay_start_s": 9841.06357209925,
+    "work_end_s": 12343.06357209925,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 12583.06357209925,
+    "ready_s": 13044.06357209925,
+    "notified_s": 13104.06357209925,
+    "pickup_s": 14304.06357209925,
+    "phantom_lines": [
+     "brake_pads"
+    ],
+    "flagged_before_handover": [
+     "brake_pads"
+    ],
+    "served": true
+   },
+   {
+    "car": "car15",
+    "plate": "70U581HT",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "coolant_check"
+    ],
+    "arrival_s": 9578.381170809198,
+    "bay": 6,
+    "bay_start_s": 10239.801458266724,
+    "work_end_s": 11801.801458266724,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 12041.801458266724,
+    "ready_s": 12686.801458266724,
+    "notified_s": 12746.801458266724,
+    "pickup_s": 13946.801458266724,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car16",
+    "plate": "90W469KV",
+    "vehicle": "hatchback-sports",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 11536.3778484782,
+    "bay": 5,
+    "bay_start_s": 11881.69591759533,
+    "work_end_s": 14893.69591759533,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 15133.69591759533,
+    "ready_s": 16011.69591759533,
+    "notified_s": 16071.69591759533,
+    "pickup_s": 17271.69591759533,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car17",
+    "plate": "01R771HT",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 12084.060176431494,
+    "bay": 6,
+    "bay_start_s": 12384.060176431494,
+    "work_end_s": 16815.060176431492,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 17055.060176431492,
+    "ready_s": 17557.060176431492,
+    "notified_s": 17617.060176431492,
+    "pickup_s": 18817.060176431492,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car18",
+    "plate": "01H828XM",
+    "vehicle": "taxi",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "suspension_tightening"
+    ],
+    "arrival_s": 12128.873977709243,
+    "bay": 3,
+    "bay_start_s": 12428.873977709243,
+    "work_end_s": 15137.873977709243,
+    "parts_wait_s": 2479.0,
+    "in_bay_wait_s": 600.0,
+    "bay_free_s": 15977.873977709243,
+    "ready_s": 17616.87397770924,
+    "notified_s": 17676.87397770924,
+    "pickup_s": 18876.87397770924,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car19",
+    "plate": "50M597KT",
+    "vehicle": "suv",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "air_filter",
+     "coolant_check",
+     "computer_diagnostics",
+     "wash"
+    ],
+    "arrival_s": 12878.95944539963,
+    "bay": 1,
+    "bay_start_s": 13178.95944539963,
+    "work_end_s": 16584.959445399632,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 16824.959445399632,
+    "ready_s": 17428.959445399632,
+    "notified_s": 17488.959445399632,
+    "pickup_s": 18688.959445399632,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car20",
+    "plate": "40I379MI",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "air_filter",
+     "coolant_check",
+     "cabin_filter",
+     "wash"
+    ],
+    "arrival_s": 13077.89087219015,
+    "bay": 5,
+    "bay_start_s": 15133.69591759533,
+    "work_end_s": 17826.69591759533,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 18066.69591759533,
+    "ready_s": 19150.69591759533,
+    "notified_s": 19210.69591759533,
+    "pickup_s": 20410.69591759533,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car21",
+    "plate": "50R224MJ",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads"
+    ],
+    "arrival_s": 13325.9293998594,
+    "bay": 3,
+    "bay_start_s": 15977.873977709243,
+    "work_end_s": 19265.87397770924,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 19505.87397770924,
+    "ready_s": 19265.87397770924,
+    "notified_s": 19325.87397770924,
+    "pickup_s": 20525.87397770924,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car22",
+    "plate": "50U679MW",
+    "vehicle": "hatchback-sports",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics",
+     "suspension_tightening",
+     "computer_diagnostics"
+    ],
+    "arrival_s": 13345.918221433918,
+    "bay": 1,
+    "bay_start_s": 16824.959445399632,
+    "work_end_s": 19347.959445399632,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 19587.959445399632,
+    "ready_s": 19994.959445399632,
+    "notified_s": 20054.959445399632,
+    "pickup_s": 21254.959445399632,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car23",
+    "plate": "85Q640ZY",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 14346.651365770846,
+    "bay": 6,
+    "bay_start_s": 17055.060176431492,
+    "work_end_s": 19298.060176431492,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 19538.060176431492,
+    "ready_s": 20219.060176431492,
+    "notified_s": 20279.060176431492,
+    "pickup_s": 21479.060176431492,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car24",
+    "plate": "20J066AL",
+    "vehicle": "taxi",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics",
+     "computer_diagnostics",
+     "wash"
+    ],
+    "arrival_s": 15877.026542756957,
+    "bay": 5,
+    "bay_start_s": 18066.69591759533,
+    "work_end_s": 21566.69591759533,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 21806.69591759533,
+    "ready_s": 22506.69591759533,
+    "notified_s": 22566.69591759533,
+    "pickup_s": 23766.69591759533,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car25",
+    "plate": "60M351EB",
+    "vehicle": "hatchback-sports",
+    "job": "express_maintenance",
+    "lines": [
+     "hv_battery_inspection",
+     "coolant_check",
+     "cabin_filter",
+     "computer_diagnostics",
+     "wash"
+    ],
+    "arrival_s": 16126.885627114936,
+    "bay": 3,
+    "bay_start_s": 19505.87397770924,
+    "work_end_s": 21141.87397770924,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 21381.87397770924,
+    "ready_s": 21698.87397770924,
+    "notified_s": 21758.87397770924,
+    "pickup_s": 22958.87397770924,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car26",
+    "plate": "20D651VZ",
+    "vehicle": "sedan",
+    "job": "brake_pads",
+    "lines": [
+     "brake_pads"
+    ],
+    "arrival_s": 16202.474494392967,
+    "bay": 6,
+    "bay_start_s": 19538.060176431492,
+    "work_end_s": 22210.060176431492,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 22450.060176431492,
+    "ready_s": 22210.060176431492,
+    "notified_s": 22270.060176431492,
+    "pickup_s": 23470.060176431492,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car27",
+    "plate": "01A251IF",
+    "vehicle": "sedan",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "coolant_check",
+     "computer_diagnostics",
+     "wiper_blades",
+     "wash"
+    ],
+    "arrival_s": 16309.54451640699,
+    "bay": 1,
+    "bay_start_s": 19587.959445399632,
+    "work_end_s": 21971.959445399632,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 22211.959445399632,
+    "ready_s": 22676.959445399632,
+    "notified_s": 22736.959445399632,
+    "pickup_s": 23936.959445399632,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car28",
+    "plate": "50M972FA",
+    "vehicle": "taxi",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change",
+     "oil_filter_change"
+    ],
+    "arrival_s": 17937.472573257273,
+    "bay": 3,
+    "bay_start_s": 21381.87397770924,
+    "work_end_s": 22749.87397770924,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 22989.87397770924,
+    "ready_s": 23983.87397770924,
+    "notified_s": 24043.87397770924,
+    "pickup_s": 25243.87397770924,
+    "phantom_lines": [
+     "oil_filter_change"
+    ],
+    "flagged_before_handover": [
+     "oil_filter_change"
+    ],
+    "served": true
+   },
+   {
+    "car": "car29",
+    "plate": "30S736UI",
+    "vehicle": "sedan",
+    "job": "express_maintenance",
+    "lines": [
+     "oil_filter_change",
+     "battery_12v_check"
+    ],
+    "arrival_s": 20105.773091155417,
+    "bay": 5,
+    "bay_start_s": 21806.69591759533,
+    "work_end_s": 23136.69591759533,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 23376.69591759533,
+    "ready_s": 23859.69591759533,
+    "notified_s": 23919.69591759533,
+    "pickup_s": 25119.69591759533,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car30",
+    "plate": "50V694MX",
+    "vehicle": "sedan",
+    "job": "tyre_change",
+    "lines": [
+     "tyre_rotation"
+    ],
+    "arrival_s": 20545.79694602048,
+    "bay": 1,
+    "bay_start_s": 22211.959445399632,
+    "work_end_s": 23317.959445399632,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 23557.959445399632,
+    "ready_s": 23317.959445399632,
+    "notified_s": 23377.959445399632,
+    "pickup_s": 24577.959445399632,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car31",
+    "plate": "25R634KK",
+    "vehicle": "hatchback-sports",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "brake_pads",
+     "wash"
+    ],
+    "arrival_s": 20660.039593253037,
+    "bay": 6,
+    "bay_start_s": 22450.060176431492,
+    "work_end_s": 25901.060176431492,
+    "parts_wait_s": 2272.0,
+    "in_bay_wait_s": 600.0,
+    "bay_free_s": 26741.060176431492,
+    "ready_s": 29310.060176431492,
+    "notified_s": 29370.060176431492,
+    "pickup_s": 30570.060176431492,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car32",
+    "plate": "80W703IU",
+    "vehicle": "sedan",
+    "job": "tyre_change",
+    "lines": [
+     "tyre_rotation",
+     "wheel_alignment",
+     "wash"
+    ],
+    "arrival_s": 21286.240604481303,
+    "bay": 3,
+    "bay_start_s": 22989.87397770924,
+    "work_end_s": 25466.87397770924,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 25706.87397770924,
+    "ready_s": 26208.87397770924,
+    "notified_s": 26268.87397770924,
+    "pickup_s": 27468.87397770924,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car33",
+    "plate": "60C802QW",
+    "vehicle": "hatchback-sports",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "brake_pads",
+     "wash",
+     "air_filter"
+    ],
+    "arrival_s": 22642.505304671107,
+    "bay": 5,
+    "bay_start_s": 23376.69591759533,
+    "work_end_s": 26298.69591759533,
+    "parts_wait_s": 4256.0,
+    "in_bay_wait_s": 600.0,
+    "bay_free_s": 27138.69591759533,
+    "ready_s": 31392.69591759533,
+    "notified_s": 31452.69591759533,
+    "pickup_s": 32652.69591759533,
+    "phantom_lines": [
+     "air_filter"
+    ],
+    "flagged_before_handover": [
+     "air_filter"
+    ],
+    "served": true
+   },
+   {
+    "car": "car34",
+    "plate": "01N884BJ",
+    "vehicle": "sedan",
+    "job": "tyre_change",
+    "lines": [
+     "seasonal_tyre_change"
+    ],
+    "arrival_s": 23255.781721131396,
+    "bay": 1,
+    "bay_start_s": 23557.959445399632,
+    "work_end_s": 26028.959445399632,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 26268.959445399632,
+    "ready_s": 26741.959445399632,
+    "notified_s": 26801.959445399632,
+    "pickup_s": 28001.959445399632,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car35",
+    "plate": "40I019VN",
+    "vehicle": "suv",
+    "job": "chassis_diagnostics",
+    "lines": [
+     "chassis_diagnostics"
+    ],
+    "arrival_s": 23772.98868115873,
+    "bay": 3,
+    "bay_start_s": 25706.87397770924,
+    "work_end_s": 26730.87397770924,
+    "parts_wait_s": 0.0,
+    "in_bay_wait_s": 0.0,
+    "bay_free_s": 26970.87397770924,
+    "ready_s": 27792.87397770924,
+    "notified_s": 27852.87397770924,
+    "pickup_s": 29052.87397770924,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car36",
+    "plate": "40L310EV",
+    "vehicle": "suv",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "suspension_tightening",
+     "wash"
+    ],
+    "arrival_s": 25633.847027914457,
+    "bay": 1,
+    "bay_start_s": 26268.959445399632,
+    "work_end_s": 28450.959445399632,
+    "parts_wait_s": 1353.0,
+    "in_bay_wait_s": 600.0,
+    "bay_free_s": 29290.959445399632,
+    "ready_s": 30316.959445399632,
+    "notified_s": 30376.959445399632,
+    "pickup_s": 31576.959445399632,
+    "phantom_lines": [],
+    "flagged_before_handover": [],
+    "served": true
+   },
+   {
+    "car": "car37",
+    "plate": "80K291AL",
+    "vehicle": "hatchback-sports",
+    "job": "repair_parts_wait",
+    "lines": [
+     "chassis_diagnostics",
+     "brake_pads",
+     "wiper_blades"
+    ],
+    "arrival_s": 25803.36734661946,
+    "bay": 6,
+    "bay_start_s": 26741.060176431492,
+    "work_end_s": 30696.060176431492,
+    "parts_wait_s": 3219.0,
+    "in_bay_wait_s": 600.0,
+    "bay_free_s": 31536.060176431492,
+    "ready_s": 34920.06017643149,
+    "notified_s": 34980.06017643149,
+    "pickup_s": 36180.06017643149,
+    "phantom_lines": [
+     "wiper_blades"
+    ],
+    "flagged_before_handover": [
+     "wiper_blades"
+    ],
+    "served": true
+   }
+  ],
+  "metrics": {
+   "cars_served": 38,
+   "cars_not_served": 0,
+   "bay_productive_share": 0.705,
+   "bay_blocked_hours": 3.5,
+   "avg_time_at_dealer_h": 1.71,
+   "avg_ready_to_notified_min": 1.0,
+   "status_calls": 0,
+   "unperformed_paid_lines": 9,
+   "flagged_before_handover": 7
+  }
+ },
+ "summary": {
+  "extra_cars_per_day": 6,
+  "bay_hours_freed_per_day": 12.2,
+  "avg_bay_job_hours": 0.67,
+  "extra_revenue_per_month_usd": 2083,
+  "revenue_formula": "extra_cars_per_day x avg_bay_job_hours (billed) x labour_rate_usd_h x working_days_month; counts only freed time that actually became served cars"
+ }
+}

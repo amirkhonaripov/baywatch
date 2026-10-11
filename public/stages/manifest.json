@@ -1,0 +1,882 @@
+{
+ "stages": {
+  "bay_real": [
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_00.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 0.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_01.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 30.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_02.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 60.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_03.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 90.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_04.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 120.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_05.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 150.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_06.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 180.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_07.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 210.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_08.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 240.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_09.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 270.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_10.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 300.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_11.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 330.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_12.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 360.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_13.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 390.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_14.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 420.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_15.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 450.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_16.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 480.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_17.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 510.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_18.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 540.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/e4O3X9gli1s_19.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "e4O3X9gli1s",
+    "title": "Vianor tyre shop CCTV (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=e4O3X9gli1s",
+    "licence": "CC BY",
+    "t_s": 570.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_00.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 0.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_01.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 30.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_02.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 60.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_03.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 90.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_04.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 120.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_05.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 150.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_06.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 180.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_07.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 210.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_08.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 240.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_09.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 270.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_10.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 300.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_11.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 330.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_12.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 360.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_13.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 390.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_14.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 420.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_15.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 450.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_16.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 480.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_17.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 510.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_18.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 540.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   },
+   {
+    "file": "stages/bay_real/OJPETY9Bis_19.jpg",
+    "source": "real_public_cctv",
+    "label": "Real CCTV (public)",
+    "clip": "-OJPETY9Bis",
+    "title": "Two-post lift bay timelapse (YouTube, CC BY)",
+    "url": "https://www.youtube.com/watch?v=-OJPETY9Bis",
+    "licence": "CC BY",
+    "t_s": 570.0,
+    "time_note": "timelapse clip: ~30 s between sampled frames (approximate)"
+   }
+  ],
+  "bay_synth": [
+   {
+    "file": "stages/bay_synth/ep06_test_00.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 0.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_01.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 48.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_02.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 96.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_03.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 144.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_04.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 192.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_05.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 240.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_06.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 288.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_07.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 336.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_08.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 384.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_09.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 432.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_10.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 480.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_11.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 528.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_12.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 576.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_13.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 624.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_14.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 672.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_15.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 720.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_16.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 768.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_17.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 816.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_18.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 864.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_19.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 912.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_20.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 960.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_21.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 1008.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_22.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 1056.0
+   },
+   {
+    "file": "stages/bay_synth/ep06_test_23.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep06_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 1104.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_00.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 0.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_01.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 48.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_02.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 96.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_03.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 144.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_04.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 192.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_05.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 240.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_06.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 288.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_07.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 336.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_08.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 384.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_09.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 432.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_10.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 480.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_11.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 528.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_12.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 576.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_13.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 624.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_14.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 672.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_15.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 720.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_16.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 768.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_17.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 816.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_18.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 864.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_19.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 912.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_20.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 960.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_21.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 1008.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_22.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 1056.0
+   },
+   {
+    "file": "stages/bay_synth/ep07_test_23.jpg",
+    "source": "synthetic_render",
+    "label": "Synthetic render (Blender)",
+    "episode": "ep07_test",
+    "licence": "own render, CC0 assets",
+    "t_s": 1104.0
+   }
+  ],
+  "ready": [
+   {
+    "file": "stages/ready/ready_00.jpg",
+    "source": "real_public_dataset",
+    "label": "Real parking camera (public dataset)",
+    "title": "PKLot UFPR04",
+    "licence": "CC BY 4.0",
+    "t_s": 0.0
+   },
+   {
+    "file": "stages/ready/ready_01.jpg",
+    "source": "real_public_dataset",
+    "label": "Real parking camera (public dataset)",
+    "title": "PKLot UFPR04",
+    "licence": "CC BY 4.0",
+    "t_s": 30.0
+   },
+   {
+    "file": "stages/ready/ready_02.jpg",
+    "source": "real_public_dataset",
+    "label": "Real parking camera (public dataset)",
+    "title": "PKLot UFPR04",
+    "licence": "CC BY 4.0",
+    "t_s": 60.0
+   },
+   {
+    "file": "stages/ready/ready_03.jpg",
+    "source": "real_public_dataset",
+    "label": "Real parking camera (public dataset)",
+    "title": "PKLot UFPR04",
+    "licence": "CC BY 4.0",
+    "t_s": 90.0
+   },
+   {
+    "file": "stages/ready/ready_04.jpg",
+    "source": "real_public_dataset",
+    "label": "Real parking camera (public dataset)",
+    "title": "PKLot UFPR04",
+    "licence": "CC BY 4.0",
+    "t_s": 120.0
+   },
+   {
+    "file": "stages/ready/ready_05.jpg",
+    "source": "real_public_dataset",
+    "label": "Real parking camera (public dataset)",
+    "title": "PKLot UFPR04",
+    "licence": "CC BY 4.0",
+    "t_s": 150.0
+   }
+  ]
+ }
+}

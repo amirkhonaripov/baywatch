@@ -1,0 +1,55 @@
+[
+  {
+    "id": "uz_plate_van",
+    "kind": "image",
+    "file": "samples/uz_plate_van.jpg",
+    "thumb": "samples/thumbs/uz_plate_van.jpg",
+    "title": { "en": "Car with an Uzbek plate", "ru": "Авто с узбекским номером", "uz": "O'zbek raqamli avtomobil" },
+    "credit": "Roboflow Universe, suxrobs-workspace / Uzbek_Plates v1 (valid split)",
+    "licence": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/suxrobs-workspace/uzbek_plates",
+    "expect": "vehicle detected, visit created, plate read by the pretrained (not Uzbek-tuned) OCR"
+  },
+  {
+    "id": "bay_lift_chery",
+    "kind": "image",
+    "file": "samples/bay_lift_chery.jpg",
+    "thumb": "samples/thumbs/bay_lift_chery.jpg",
+    "title": { "en": "Service bay: car on a lift", "ru": "Пост: авто на подъёмнике", "uz": "Servis posti: ko'targichdagi avtomobil" },
+    "credit": "ANT Berezhnyi, \"Chery A1 - service shop in Ukraine (7)\", Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chery_A1_-_service_shop_in_Ukraine_(7).jpg"
+  },
+  {
+    "id": "bay_lift_mustang",
+    "kind": "image",
+    "file": "samples/bay_lift_mustang.jpg",
+    "thumb": "samples/thumbs/bay_lift_mustang.jpg",
+    "title": { "en": "Garage bay, car raised", "ru": "Гараж, авто поднято", "uz": "Garaj, avtomobil ko'tarilgan" },
+    "credit": "Phillip Pessar, \"Classic Mustang at Garage, West Miami Florida August 2024\", Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Classic_Mustang_at_Garage,_West_Miami_Florida_August_2024.jpg"
+  },
+  {
+    "id": "detrac_video",
+    "kind": "video",
+    "file": "samples/detrac_MVI_39051_12s.mp4",
+    "thumb": "samples/thumbs/detrac_MVI_39051.jpg",
+    "title": { "en": "Traffic camera, 12 s video", "ru": "Дорожная камера, видео 12 с", "uz": "Yo'l kamerasi, 12 s video" },
+    "credit": "UA-DETRAC test sequence MVI_39051, frames 1-300 encoded at 25 fps",
+    "licence": "CC BY-NC-SA 3.0",
+    "source_url": "https://detrac-db.rit.albany.edu/",
+    "expect": "sampled in the browser to 24 frames; vehicles detected; a visit with arrival"
+  },
+  {
+    "id": "non_car_flower",
+    "kind": "image",
+    "file": "samples/non_car_flower.jpg",
+    "thumb": "samples/thumbs/non_car_flower.jpg",
+    "title": { "en": "Not a car (flower)", "ru": "Не авто (цветок)", "uz": "Avtomobil emas (gul)" },
+    "credit": "vultilion on Flickr, via scikit-learn sample images (flower.jpg)",
+    "licence": "CC BY 2.0",
+    "source_url": "https://www.flickr.com/photos/vultilion/6056698931/",
+    "expect": "scene unknown, no visit created"
+  }
+]

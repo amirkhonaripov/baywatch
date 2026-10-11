@@ -1,0 +1,657 @@
+{
+ "generated_at": "2026-10-11T02:16:17.842408Z",
+ "placeholder": false,
+ "note": "Collected from docs/lanes/*_sources.md. Non-commercial/research data used for the prototype only; a paid pilot needs re-licensing or own data.",
+ "datasets": [
+  {
+   "name": "Uzbek_Plates v1, image AAF0119214_car-front_… (Damas van, front)",
+   "url": "https://universe.roboflow.com/suxrobs-workspace/uzbek_plates",
+   "licence": "CC BY 4.0 (dataset README on the box: data/raw/ident_uz/roboflow_uzbek_plates/README.dataset.txt)",
+   "used_for": "demo input \"Car with an Uzbek plate\"; recorded backup run",
+   "lane": "app",
+   "faces_plates": "faces: n (checked visually); plates: y (public dataset)"
+  },
+  {
+   "name": "\"Chery A1 - service shop in Ukraine (7)\", ANT Berezhnyi",
+   "url": "https://commons.wikimedia.org/wiki/File:Chery_A1_-_service_shop_in_Ukraine_(7).jpg",
+   "licence": "CC BY 3.0 (from data/raw/ops_commons/meta.csv)",
+   "used_for": "demo input \"Service bay: car on a lift\"",
+   "lane": "app",
+   "faces_plates": "faces: n; plates: n"
+  },
+  {
+   "name": "\"Classic Mustang at Garage, West Miami Florida August 2024\", Phillip Pessar",
+   "url": "https://commons.wikimedia.org/wiki/File:Classic_Mustang_at_Garage,_West_Miami_Florida_August_2024.jpg",
+   "licence": "CC BY 2.0 (from data/raw/ops_commons/meta.csv)",
+   "used_for": "demo input \"Garage bay, car raised\"",
+   "lane": "app",
+   "faces_plates": "faces: n; plates: y (small, US)"
+  },
+  {
+   "name": "UA-DETRAC test sequence MVI_39051, frames 1–300, re-encoded to a 12 s H.264 mp4 (25 fps, 960×540)",
+   "url": "https://detrac-db.rit.albany.edu/",
+   "licence": "CC BY-NC-SA 3.0",
+   "used_for": "demo video for the in-browser sampler; recorded backup run",
+   "lane": "app",
+   "faces_plates": "faces: not identifiable at this resolution (traffic camera); plates: not legible"
+  },
+  {
+   "name": "flower.jpg from scikit-learn sample images (vultilion on Flickr)",
+   "url": "https://www.flickr.com/photos/vultilion/6056698931/",
+   "licence": "CC BY 2.0 (scikit-learn datasets/images/README.txt)",
+   "used_for": "demo \"not a car\" input (unknown path)",
+   "lane": "app",
+   "faces_plates": "n / n"
+  },
+  {
+   "name": "UA-DETRAC (HF reformat abhineet123/ua_detrac, frames + boxes)",
+   "url": "https://huggingface.co/datasets/abhineet123/ua_detrac",
+   "licence": "Original licence not found (official site is down). The uploader tagged the HF repo cc-by-4.0, which does not override the original terms. Treat as evaluation / research only.",
+   "used_for": "test (40 official test sequences: detection AP per weather, tracking), train (60 sequences, fine-tuning)",
+   "lane": "flow",
+   "faces_plates": "plates readable (Chinese traffic) / faces: no"
+  },
+  {
+   "name": "UA-DETRAC original XML annotations (weather label per sequence, vehicle type, ignored regions, speed)",
+   "url": null,
+   "licence": "the uploader's note says CC-BY-NC-SA and that it is a private mirror; original licence not found",
+   "used_for": "weather labels (sence_weather), vehicle types for fine-tuning classes, ignored regions, speeds",
+   "lane": "flow",
+   "faces_plates": "as above"
+  },
+  {
+   "name": "NDISPark",
+   "url": "https://zenodo.org/records/6560823",
+   "licence": "ODC-By 1.0 (record + COCO json)",
+   "used_for": "day (train split, 112 images) vs night (validation split, 30 images with boxes; test split 117 images with vehicle counts only); fine-tune on day split",
+   "lane": "flow",
+   "faces_plates": "parking lots; not stated"
+  },
+  {
+   "name": "PKLot",
+   "url": "https://web.inf.ufpr.br/vri/databases/parking-lot-database/",
+   "licence": "CC BY 4.0",
+   "used_for": "slot occupancy test and threshold calibration (PUCPR, UFPR04, UFPR05; sunny/cloudy/rainy), frames for router \"street\"",
+   "lane": "flow",
+   "faces_plates": "plates unlikely readable / faces: no"
+  },
+  {
+   "name": "CNRPark+EXT (CNR-EXT full frames, slot boxes, labels)",
+   "url": "http://www.cnrpark.it/",
+   "licence": "ODbL 1.0 (project page)",
+   "used_for": "slot occupancy cross-dataset test and calibration (sunny/overcast/rainy), router \"street\" frames",
+   "lane": "flow",
+   "faces_plates": "frames downsampled to 1000x750 \"due to privacy issues\""
+  },
+  {
+   "name": "MIO-TCD localization",
+   "url": "https://tcd.miovision.com/",
+   "licence": "CC BY-NC-SA 4.0",
+   "used_for": "cut: download (3.7 GB) was too slow on the shared drive and stopped at 1.6 GB, see notes",
+   "lane": "flow",
+   "faces_plates": "not stated"
+  },
+  {
+   "name": "COCO val2017",
+   "url": "https://cocodataset.org",
+   "licence": "annotations CC BY 4.0; images are Flickr photos with mixed CC licences",
+   "used_for": "person-AP regression check (zero-shot vs fine-tuned), router \"street\"/\"motorcycle\"/\"unknown\" images (never used to train a detector)",
+   "lane": "flow",
+   "faces_plates": "faces: yes (web photos)"
+  },
+  {
+   "name": "WIDER FACE (val, via HF CUHK-CSE/wider_face)",
+   "url": "http://shuoyang1213.me/WIDERFACE/",
+   "licence": "non-commercial research (HF card: cc-by-nc-nd-4.0)",
+   "used_for": "face-blur recall (test only)",
+   "lane": "flow",
+   "faces_plates": "faces: yes (that is the data)"
+  },
+  {
+   "name": "Wikimedia Commons categories (repair shops, lifts, tyre shops, garages, car washes, boom barriers, car-park entrances, gatehouses, checkpoints, Ducati, scooters, car hoods/wheels/engines, a few non-car searches)",
+   "url": "https://commons.wikimedia.org",
+   "licence": "per file: CC BY / CC BY-SA / CC0 / public domain etc. The exact licence, author and page URL of every image are in data/prep/flow/router/manifest.jsonl",
+   "used_for": "router training + held-out evaluation",
+   "lane": "flow",
+   "faces_plates": "people and plates can appear in some images"
+  },
+  {
+   "name": "Stanford Cars (HF tanganke/stanford_cars)",
+   "url": "https://huggingface.co/datasets/tanganke/stanford_cars",
+   "licence": "Stanford Cars: research use, no explicit licence on the mirror",
+   "used_for": "router \"closeup\" (whole-car photos)",
+   "lane": "flow",
+   "faces_plates": "plates sometimes readable"
+  },
+  {
+   "name": "Roboflow Universe Uzbek_Plates (suxrobs-workspace/uzbek_plates, version 1)",
+   "url": "https://universe.roboflow.com/suxrobs-workspace/uzbek_plates",
+   "licence": "CC BY 4.0 (the roboflow licence field of the export)",
+   "used_for": "detector train/val/test (boxes), real-UZ OCR test (301 original images, text labels made by us, see notes), pseudo-labelled OCR training crops (train split only)",
+   "lane": "ident",
+   "faces_plates": "plates yes (real Uzbek cars at an inspection-station-like site), faces no (a few people at the edge of some frames)"
+  },
+  {
+   "name": "Mendeley Data \"Dataset Of Central Asia vehicle number plate with Annotations\" (v2)",
+   "url": "https://data.mendeley.com/datasets/4c5z833m6m/2",
+   "licence": "CC BY 4.0",
+   "used_for": "background photos only for plate compositing: the zip has 502 JPEGs in per-country folders without any annotation file, and in the Uzbek folder the plates are blurred by the seller, so it cannot serve as plate ground truth",
+   "lane": "ident",
+   "faces_plates": "plates blurred"
+  },
+  {
+   "name": "Wikimedia Commons, Uzbekistan car/plate categories + keyword searches (per-file licences in data/raw/ident_uz/commons/meta.jsonl on the box)",
+   "url": "https://commons.wikimedia.org",
+   "licence": "per file: CC BY-SA 4.0 / CC BY 4.0 / CC BY-SA 3.0 / CC0 / public domain / CC BY 2.0 etc. (counted in the notes)",
+   "used_for": "background photos for compositing; qualitative checks",
+   "lane": "ident",
+   "faces_plates": "some plates visible"
+  },
+  {
+   "name": "CCPD2019 (Chinese City Parking Dataset) subsets ccpd_db, ccpd_weather, ccpd_challenge, ccpd_base",
+   "url": "https://github.com/detectRecog/CCPD",
+   "licence": "MIT (GitHub licence of the CCPD repo); the HF mirror states no licence",
+   "used_for": "detection robustness: night/bright/uneven illumination (DB), weather, challenge; Chinese plate formats (wrong script), so used for detection and compositing backgrounds only, never OCR",
+   "lane": "ident",
+   "faces_plates": "plates yes, faces no"
+  },
+  {
+   "name": "RodoSol-ALPR (Kaggle mirror tewjinglai/robosol: only cars-br and cars-me, 5,001 + 5,000 images; the motorcycle subsets are not in this mirror)",
+   "url": "https://github.com/raysonlaroca/rodosol-alpr-dataset",
+   "licence": "academic/non-commercial research use under the authors' licence agreement (pdfs/license-agreement.pdf in the original repo); the Kaggle mirror itself states no licence",
+   "used_for": "detection + OCR test (block-split test part), night/rain subset by measured luminance, composite backgrounds (train part)",
+   "lane": "ident",
+   "faces_plates": "plates yes, drivers' faces blurred by the authors"
+  },
+  {
+   "name": "Unidata licence-plate sample (Kaggle unidpro/license-plate-detection-dataset, 3.7 MB)",
+   "url": "https://www.kaggle.com/datasets/unidpro/license-plate-detection-dataset",
+   "licence": "commercial dataset sample, licence not read in detail",
+   "used_for": "downloaded, has no Uzbek images (Argentina, France, Mexico, Portugal only); not used, deleted",
+   "lane": "ident",
+   "faces_plates": "plates yes"
+  },
+  {
+   "name": "Kaggle valixonovilyosbek/cars-that-are-common-in-uzbekistan",
+   "url": "https://www.kaggle.com/datasets/valixonovilyosbek/cars-that-are-common-in-uzbekistan",
+   "licence": "MIT (uploader)",
+   "used_for": "inspected via file listing only: it is a Cityscapes-based Roboflow export, not Uzbek plates; not used",
+   "lane": "ident",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "GitHub sardor-asatillaev/uzlpr, bekhzod-olimov/Synthethic-Uzbek-Car-Registration-Plates-Generator, IzzatulloOne/plate-recognition-uz",
+   "url": null,
+   "licence": "NOASSERTION / none stated / MIT",
+   "used_for": "read only: plate-format rules (plate_rules.py regexes), series statistics sanity check; nothing from platesmania.com was downloaded; no code or glyph images copied",
+   "lane": "ident",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "VehiDE (Kaggle copy of the official 13,945-image release, JSON train 11,621 + validation 2,324)",
+   "url": "https://www.kaggle.com/datasets/hendrichscullen/vehide-dataset-automatic-vehicle-damage-detection",
+   "licence": "Kaggle page label \"Apache 2.0\" (uploader); the paper states no licence. Treat as unclear.",
+   "used_for": "damage: train/val (train JSON) and in-source test (official validation)",
+   "lane": "inspect",
+   "faces_plates": "unknown, plates likely"
+  },
+  {
+   "name": "Humans in the Loop \"Car Parts and Car Damages\"",
+   "url": "https://www.kaggle.com/datasets/humansintheloop/car-parts-and-car-damages",
+   "licence": "CC0 1.0",
+   "used_for": "damage half (814 imgs): train/val/test; parts half (998 imgs): parts train/val/test",
+   "lane": "inspect",
+   "faces_plates": "plates visible (`License-plate` is a class)"
+  },
+  {
+   "name": "CarDD (via the Hugging Face FiftyOne mirror harpreetsahota/CarDD, 2,816 images = the official training portion)",
+   "url": "https://huggingface.co/datasets/harpreetsahota/CarDD",
+   "licence": "Research use only; prior consent from the PIC Lab (CAS) required; any commercial use incl. \"testing commercial systems\" needs authorisation; no transfer/distribution to third parties without authorisation (CarDD_license.pdf shipped in the mirror, signed by Voxel51, not by us). Obtained via the mirror at the integrator's instruction.",
+   "used_for": "damage: train (model B only) + in-source test (cardd_test) + cross-source test for model A (cardd_trainpart)",
+   "lane": "inspect",
+   "faces_plates": "faces/plates mosaicked or removed (paper)"
+  },
+  {
+   "name": "Ultralytics carparts-seg (origin Roboflow car-seg, Gianmarco Russo)",
+   "url": "https://docs.ultralytics.com/datasets/segment/carparts-seg/",
+   "licence": "CC BY 4.0 (docs page)",
+   "used_for": "parts: train/val/test (pooled and re-split by pHash cluster)",
+   "lane": "inspect",
+   "faces_plates": "not checked"
+  },
+  {
+   "name": "TyreNet (Mendeley 32b5vfj6tc)",
+   "url": "https://data.mendeley.com/datasets/32b5vfj6tc",
+   "licence": "CC BY 4.0",
+   "used_for": "tyre condition: train/val/in-source test",
+   "lane": "inspect",
+   "faces_plates": "tyre close-ups, low risk"
+  },
+  {
+   "name": "Roboflow dots-tracking/tire-dot-finder v5 (83) and kumbhar-saket/tyre-sidewall-text-label v5 ('dot' class only, train split)",
+   "url": "https://universe.roboflow.com/dots-tracking/tire-dot-finder",
+   "licence": "CC BY 4.0 (Roboflow label)",
+   "used_for": "DOT region detector: train/val",
+   "lane": "inspect",
+   "faces_plates": "none"
+  },
+  {
+   "name": "SYNDCAR",
+   "url": "https://data.mendeley.com/datasets/hzpj48krdt",
+   "licence": "CC BY 4.0",
+   "used_for": "damage (4 classes, boxes) and parts (28 classes) cross-source test; damage->part assignment. Photos of ONE vehicle model (Citroen Ami, two vehicle IDs) with digitally generated damage (our reading; the page does not describe the method)",
+   "lane": "inspect",
+   "faces_plates": "plates blurred in the photos we looked at; `license_plate` is a parts class"
+  },
+  {
+   "name": "Kaggle Coco Car Damage",
+   "url": "https://www.kaggle.com/datasets/lplenka/coco-car-damage-detection-dataset",
+   "licence": "CC0",
+   "used_for": "class-agnostic damage test (70 annotated images; the 8 'test' images ship without annotations)",
+   "lane": "inspect",
+   "faces_plates": "not checked"
+  },
+  {
+   "name": "Roboflow jijo/car-damage-new v2 (HF export JijoJS/car-damage-new1)",
+   "url": "https://universe.roboflow.com/jijo/car-damage-new",
+   "licence": "CC BY 4.0 (Roboflow label); provenance unknown",
+   "used_for": "dent/scratch cross-source test (416x416 aspect-stretched)",
+   "lane": "inspect",
+   "faces_plates": "plates possible"
+  },
+  {
+   "name": "CarDamagePanel (CMU 24-679 project, 565 imgs, 21 panels)",
+   "url": "https://huggingface.co/datasets/kadireks/cardamagepanel-originals",
+   "licence": "\"other\" (not specified)",
+   "used_for": "parts cross-source test",
+   "lane": "inspect",
+   "faces_plates": "`license-plate` is a class"
+  },
+  {
+   "name": "Kaggle warcoder/tyre-quality-classification",
+   "url": "https://www.kaggle.com/datasets/warcoder/tyre-quality-classification",
+   "licence": "CC BY 4.0 (Kaggle label)",
+   "used_for": "tyre condition cross-dataset test (after removing TyreNet near-duplicates)",
+   "lane": "inspect",
+   "faces_plates": "none seen"
+  },
+  {
+   "name": "Kaggle sameersambhare1/tyre-condition-classification-dataset",
+   "url": "https://www.kaggle.com/datasets/sameersambhare1/tyre-condition-classification-dataset",
+   "licence": "CC BY-SA 4.0",
+   "used_for": "tyre condition cross-dataset test (NEW + SERVICEABLE = good, UNUSABLE = defective, our mapping)",
+   "lane": "inspect",
+   "faces_plates": "none seen"
+  },
+  {
+   "name": "Roboflow subhams-workspace-l47ut/dot-code-6shg0 (97)",
+   "url": "https://universe.roboflow.com/subhams-workspace-l47ut/dot-code-6shg0",
+   "licence": "CC BY 4.0 (Roboflow label)",
+   "used_for": "DOT region detector cross-source test",
+   "lane": "inspect",
+   "faces_plates": "none"
+  }
+ ],
+ "models": [
+  {
+   "name": "RF-DETR Base (COCO), rf-detr-base.pth",
+   "url": "https://github.com/roboflow/rf-detr",
+   "licence": "Apache-2.0",
+   "used_for": "vehicle + person detection in the served pipeline",
+   "lane": "app",
+   "faces_plates": "trained on COCO (faces y)"
+  },
+  {
+   "name": "fast-alpr default plate detector yolo-v9-t-384-license-plates-end2end (open-image-models)",
+   "url": "https://github.com/ankandrew/open-image-models",
+   "licence": "MIT (repo)",
+   "used_for": "plate detection in the served pipeline",
+   "lane": "app",
+   "faces_plates": "plates y"
+  },
+  {
+   "name": "fast-plate-ocr cct-xs-v2-global-model",
+   "url": "https://github.com/ankandrew/fast-plate-ocr",
+   "licence": "MIT (repo)",
+   "used_for": "plate OCR in the served pipeline (not Uzbek-tuned)",
+   "lane": "app",
+   "faces_plates": "plates y"
+  },
+  {
+   "name": "Seen jury set v1 (96 inputs: 82 photos, 7 videos, 7 frames cut from those videos)",
+   "url": null,
+   "licence": "per file, recorded in eval/jury/jury.jsonl: CC BY 2.0/3.0/4.0, CC BY-SA 2.0/3.0/4.0, CC0, public domain",
+   "used_for": "test only (jury-style end-to-end test); held out in eval/manifests/jury.jsonl",
+   "lane": "eval",
+   "faces_plates": "yes / yes (some plates were blurred by the uploaders)"
+  },
+  {
+   "name": "RF-DETR base, COCO-pretrained (via seen.baseline, rfdetr 1.11.2)",
+   "url": "https://github.com/roboflow/rf-detr",
+   "licence": "Apache-2.0 (code and weights, per repo)",
+   "used_for": "speed benchmark (PyTorch, ONNX Runtime, TensorRT); baseline pipeline under test",
+   "lane": "eval",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "fast-alpr 0.4.0: yolo-v9-t-384-license-plate-end2end detector + cct-xs-v2-global-model OCR",
+   "url": "https://github.com/ankandrew/fast-alpr",
+   "licence": "library MIT; model weights: licence not stated on the hub page (not checked)",
+   "used_for": "speed benchmark; baseline pipeline under test",
+   "lane": "eval",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "OpenCV YuNet face detector face_detection_yunet_2023mar.onnx",
+   "url": "https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet",
+   "licence": "MIT",
+   "used_for": "extra face blur on every failure-gallery image",
+   "lane": "eval",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "OpenCV Haar cascades (frontal, profile), bundled with opencv-python",
+   "url": "https://github.com/opencv/opencv/tree/4.x/data/haarcascades",
+   "licence": "Intel open-source licence (BSD-style), per the XML headers",
+   "used_for": "extra face blur on every failure-gallery image",
+   "lane": "eval",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "NVIDIA TensorRT 10.15 libraries (tensorrt_cu13_libs wheel, only libnvinfer/plugin/onnxparser + sm120/ptx builder resources kept, on the NVMe at seen_fast/eval/trt (1.2 GB))",
+   "url": "https://pypi.nvidia.com/tensorrt-cu13-libs/",
+   "licence": "NVIDIA TensorRT licence (proprietary, redistribution restricted)",
+   "used_for": "speed table only (ONNX Runtime TensorRT EP, FP16)",
+   "lane": "eval",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "RF-DETR Nano/Small/Medium/Base/Large (COCO)",
+   "url": "https://github.com/roboflow/rf-detr",
+   "licence": "Apache-2.0 for these sizes (the XLarge/2XLarge sizes are under a separate licence and are not used)",
+   "used_for": "vehicle + person detector (zero-shot and fine-tuned)",
+   "lane": "flow",
+   "faces_plates": ""
+  },
+  {
+   "name": "Ultralytics YOLO11x, YOLO26x (COCO)",
+   "url": "https://github.com/ultralytics/ultralytics",
+   "licence": "AGPL-3.0",
+   "used_for": "zero-shot comparison only, not shipped",
+   "lane": "flow",
+   "faces_plates": ""
+  },
+  {
+   "name": "SigLIP2 so400m-patch14-384, base-patch16-384",
+   "url": "https://huggingface.co/google/siglip2-so400m-patch14-384",
+   "licence": "Apache-2.0",
+   "used_for": "scene router (zero-shot + linear probe on frozen embeddings)",
+   "lane": "flow",
+   "faces_plates": ""
+  },
+  {
+   "name": "YuNet face_detection_yunet_2023mar.onnx",
+   "url": "https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet",
+   "licence": "MIT",
+   "used_for": "face blur",
+   "lane": "flow",
+   "faces_plates": ""
+  },
+  {
+   "name": "OC-SORT (algorithm: Cao et al., CVPR 2023)",
+   "url": "https://github.com/noahcao/OC_SORT",
+   "licence": "MIT; lanes/flow/tracker.py is our own re-implementation",
+   "used_for": "tracker",
+   "lane": "flow",
+   "faces_plates": ""
+  },
+  {
+   "name": "ByteTrack (via supervision)",
+   "url": "https://github.com/roboflow/supervision",
+   "licence": "MIT",
+   "used_for": "tracker baseline",
+   "lane": "flow",
+   "faces_plates": ""
+  },
+  {
+   "name": "AUTO.RIA OCR crops: Kazakhstan autoriaNumberplateOcrKz-2022-11-29 (9,922 crops), Kyrgyzstan ...Kg-2022-11-30 (31,917), Russia ...Ru-2021-09-01 (57,120)",
+   "url": "https://nomeroff.net.ua/datasets/",
+   "licence": "not stated on the dataset page or in the zips (code repo is GPL-3.0)",
+   "used_for": "OCR train + val (train/val splits of each zip), OCR test (native test split of each zip: KZ 279, KG 1,068, RU 2,845)",
+   "lane": "ident",
+   "faces_plates": "plates yes (real marketplace photos), faces no"
+  },
+  {
+   "name": "AUTO.RIA OCR SU ...Su-2023-03-10",
+   "url": null,
+   "licence": "not stated",
+   "used_for": "downloaded, not used (labels are mostly Cyrillic; deleted)",
+   "lane": "ident",
+   "faces_plates": "plates yes"
+  },
+  {
+   "name": "fast-plate-ocr cct-s-v2-global-model (ONNX + Keras weights cct_s_v2_global.keras), global-plates-mobile-vit-v2-model",
+   "url": "https://github.com/ankandrew/fast-plate-ocr",
+   "licence": "MIT",
+   "used_for": "baseline numbers; cct_s_v2_global.keras is the initialisation of our fine-tuning",
+   "lane": "ident",
+   "faces_plates": ""
+  },
+  {
+   "name": "fast-alpr detector yolo-v9-t-384-license-plate-end2end (open-image-models)",
+   "url": "https://github.com/ankandrew/open-image-models",
+   "licence": "MIT (training data of the weights not stated)",
+   "used_for": "baseline detector numbers",
+   "lane": "ident",
+   "faces_plates": ""
+  },
+  {
+   "name": "RF-DETR (Nano/Small) COCO-pretrained backbone",
+   "url": "https://github.com/roboflow/rf-detr",
+   "licence": "Apache-2.0",
+   "used_for": "initialisation of the plate detector (see notes)",
+   "lane": "ident",
+   "faces_plates": ""
+  },
+  {
+   "name": "Qwen3-VL-4B-Instruct",
+   "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+   "licence": "Apache-2.0",
+   "used_for": "second independent reader for pre-labelling the real-UZ OCR test set (labels then verified by Claude, an AI, pending human spot-check)",
+   "lane": "ident",
+   "faces_plates": ""
+  },
+  {
+   "name": "TyreAI OCR (Roboflow tyreai/ocr-yphpv v3, 4,054 images, 39 character classes)",
+   "url": "https://universe.roboflow.com/tyreai/ocr-yphpv",
+   "licence": "CC BY 4.0 (Roboflow label)",
+   "used_for": "DOT character reader: train/val/test (pHash-cluster split)",
+   "lane": "inspect",
+   "faces_plates": "none"
+  },
+  {
+   "name": "YOLO11m-seg / YOLO11s / YOLO26 COCO-pretrained weights (Ultralytics)",
+   "url": "https://github.com/ultralytics/assets/releases",
+   "licence": "AGPL-3.0 (code and weights)",
+   "used_for": "initialisation + training framework for damage, parts, DOT region and DOT characters. Commercial deployment needs an Ultralytics licence or a re-train on an Apache-2.0 detector (RF-DETR)",
+   "lane": "inspect",
+   "faces_plates": ""
+  },
+  {
+   "name": "DINOv2 ViT-B/14 (timm/vit_base_patch14_dinov2.lvd142m)",
+   "url": "https://huggingface.co/timm/vit_base_patch14_dinov2.lvd142m",
+   "licence": "Apache-2.0 (weights and code, Meta AI)",
+   "used_for": "frozen feature extractor of the tyre condition classifier",
+   "lane": "inspect",
+   "faces_plates": ""
+  },
+  {
+   "name": "Kinetics-700-2020 (clips via HF mirror atalaydenknalbant/Kinetics-700, annotation CSVs from S3)",
+   "url": "https://huggingface.co/datasets/atalaydenknalbant/Kinetics-700",
+   "licence": "Annotations CC BY 4.0 (secondary sources; official statement not found); videos are YouTube uploads (mirror tag \"other\")",
+   "used_for": "train (train split) / test (K700 validation split) for work; teacher-labelled frames for the other states",
+   "lane": "ops",
+   "faces_plates": "y / y"
+  },
+  {
+   "name": "CrossTask (Change a Tire, Jack Up a Car, Add Oil to Your Car + 5 related car tasks)",
+   "url": "https://www.di.ens.fr/~dzhukov/crosstask/crosstask_release.zip",
+   "licence": "Code BSD-3-Clause; no data licence stated; videos YouTube",
+   "used_for": "train/test split by video: raised, wheel_off (derived from step spans), work proxy (inside/outside steps), hood_open (Add Oil steps)",
+   "lane": "ops",
+   "faces_plates": "y / y"
+  },
+  {
+   "name": "COIN (ChangeCarTire, UseJack, ReplaceTyreValveStem, ReplaceCarFuse, PolishCar, ReplaceAWiperHead)",
+   "url": "https://github.com/coin-dataset/annotations",
+   "licence": "Annotations CC BY-NC 4.0; videos YouTube",
+   "used_for": "same as CrossTask",
+   "lane": "ops",
+   "faces_plates": "y / y"
+  },
+  {
+   "name": "Roboflow carhoodopen/car-hood-open v4",
+   "url": "https://universe.roboflow.com/carhoodopen/car-hood-open",
+   "licence": "CC BY 4.0 (uploader label)",
+   "used_for": "train (train+valid) / test (RF test split) for hood_open; hood open/closed detector",
+   "lane": "ops",
+   "faces_plates": "not systematically checked / y"
+  },
+  {
+   "name": "Roboflow vehicles-ztmmv/car-open-hood",
+   "url": "https://universe.roboflow.com/vehicles-ztmmv/car-open-hood",
+   "licence": "CC BY 4.0 (uploader label)",
+   "used_for": "train / test (RF test split) for hood_open",
+   "lane": "ops",
+   "faces_plates": "not checked"
+  },
+  {
+   "name": "Roboflow deep-learning-ocos/car-condition-detection",
+   "url": "https://universe.roboflow.com/deep-learning-ocos/car-condition-detection",
+   "licence": "CC BY 4.0 (uploader label)",
+   "used_for": "test only (cross-project hood_open)",
+   "lane": "ops",
+   "faces_plates": "not checked"
+  },
+  {
+   "name": "Roboflow um-84bee/washing-car",
+   "url": "https://universe.roboflow.com/um-84bee/washing-car",
+   "licence": "CC BY 4.0 (uploader label)",
+   "used_for": "train for washing, hood_open (fixed wash-yard cameras)",
+   "lane": "ops",
+   "faces_plates": "y (one readable plate seen in preview)"
+  },
+  {
+   "name": "Ultralytics Carparts-Seg (from Roboflow car-seg by G. Russo)",
+   "url": "https://docs.ultralytics.com/datasets/segment/carparts-seg/",
+   "licence": "Docs page: none stated; Roboflow source CC BY 4.0",
+   "used_for": "wheel part detector; parked-car negatives",
+   "lane": "ops",
+   "faces_plates": "not checked"
+  },
+  {
+   "name": "Wikimedia Commons \"Stationary automobile service lifts\" (41 files, 24 kept after hand screening)",
+   "url": "https://commons.wikimedia.org/wiki/Category:Stationary_automobile_service_lifts",
+   "licence": "Per file: CC BY-SA 4.0/3.0/2.0, CC BY 3.0/2.0, public domain (see lanes/ops/labels/commons_labels.csv)",
+   "used_for": "train for raised (hand-labelled); 7 files are jury items and are removed by eval.manifest.filter_train",
+   "lane": "ops",
+   "faces_plates": "some / some"
+  },
+  {
+   "name": "Public workshop CCTV / timelapse clips: e4O3X9gli1s (Vianor, CC BY), -OJPETY9Bis (Revolution Automotive, CC BY), JIEX2ruxZKM, wWSNERw5oME, 2mhugD9KYjI, BZsVY9FUUOo (standard YouTube licence)",
+   "url": "https://www.youtube.com/watch?v=<id>",
+   "licence": "as listed",
+   "used_for": "TEST ONLY (hand-labelled bay ROIs); never trained on; videos kept on the box, not in the repo",
+   "lane": "ops",
+   "faces_plates": "y / some"
+  },
+  {
+   "name": "Bh4IqT2Wq-s (Williams Auto Group)",
+   "url": "https://www.youtube.com/watch?v=Bh4IqT2Wq-s",
+   "licence": "standard YouTube licence",
+   "used_for": "downloaded, not used (close tripod shot, not a bay view)",
+   "lane": "ops",
+   "faces_plates": "y / ?"
+  },
+  {
+   "name": "DINOv2 ViT-L/14 (facebook/dinov2-large)",
+   "url": "https://huggingface.co/facebook/dinov2-large",
+   "licence": "Apache-2.0",
+   "used_for": "frozen crop-embedding backbone (image-only pretraining, no Kinetics)",
+   "lane": "ops",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "RF-DETR Base (COCO) via seen.baseline.PretrainedDetector",
+   "url": "https://github.com/roboflow/rf-detr",
+   "licence": "Apache-2.0",
+   "used_for": "vehicle/person context boxes for training features and CCTV eval",
+   "lane": "ops",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "Ultralytics YOLO11s (COCO-pretrained init)",
+   "url": "https://github.com/ultralytics/ultralytics",
+   "licence": "AGPL-3.0",
+   "used_for": "init for wheel / hood part detectors (if trained)",
+   "lane": "ops",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "Qwen3-VL-8B-Instruct",
+   "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+   "licence": "Apache-2.0",
+   "used_for": "zero-shot baseline on the CCTV test frames; teacher labels for training frames that have no human/derived label",
+   "lane": "ops",
+   "faces_plates": "n/a"
+  },
+  {
+   "name": "Kenney Car Kit",
+   "url": "https://kenney.nl/assets/car-kit",
+   "licence": "CC0 1.0",
+   "used_for": "synthetic renders (cars, wheels): train + test",
+   "lane": "sim",
+   "faces_plates": "n / n (toy models, no plates)"
+  },
+  {
+   "name": "Kenney Mini Characters",
+   "url": "https://kenney.nl/assets/mini-characters",
+   "licence": "CC0 1.0",
+   "used_for": "synthetic renders (proxy mechanics): train + test",
+   "lane": "sim",
+   "faces_plates": "stylised cartoon faces, not real people / n"
+  },
+  {
+   "name": "Poly Haven HDRIs (auto_service, autoshop_01, garage, skylit_garage, machine_shop_02, empty_workshop)",
+   "url": "https://polyhaven.com/hdris",
+   "licence": "CC0 1.0",
+   "used_for": "lighting and background of renders; skylit_garage held out for test",
+   "lane": "sim",
+   "faces_plates": "n / tiny distant background cars, plates not readable at 1k"
+  },
+  {
+   "name": "Poly Haven textures (concrete_floor_02, concrete_floor_painted, concrete_floor_worn_001, painted_plaster_wall)",
+   "url": "https://polyhaven.com/textures",
+   "licence": "CC0 1.0",
+   "used_for": "floor and wall materials",
+   "lane": "sim",
+   "faces_plates": "n / n"
+  },
+  {
+   "name": "Blender 5.0.1",
+   "url": "https://www.blender.org",
+   "licence": "GPL-3.0 (outputs are ours)",
+   "used_for": "rendering",
+   "lane": "sim",
+   "faces_plates": "–"
+  },
+  {
+   "name": "Scenario engine (own code, sim/scenario.py)",
+   "url": null,
+   "licence": "project licence",
+   "used_for": "all synthetic timelines, work orders, noise test",
+   "lane": "sim",
+   "faces_plates": "n / n (random synthetic plate strings in Uzbek format)"
+  }
+ ]
+}

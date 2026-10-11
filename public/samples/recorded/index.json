@@ -1,0 +1,22 @@
+[
+ {
+  "id": "detrac_video",
+  "title": "Traffic video (sampled in the browser)",
+  "captured_at": "2026-10-10T17:23:10+00:00",
+  "captured_with": "serve.local on the GPU box (RTX PRO 5000, GPU1), baseline pretrained models",
+  "input": "samples/detrac_MVI_39051_12s.mp4 (UA-DETRAC MVI_39051), sampled in Chromium at 2 fps / 720p; gate zone drawn; work order: tyre rotation, cabin filter, wash; simulation on",
+  "input_licence": "CC BY-NC-SA 3.0",
+  "file": "samples/recorded/detrac_video/result.json",
+  "base": "samples/recorded/detrac_video/"
+ },
+ {
+  "id": "uz_plate_van",
+  "title": "Car photo with an Uzbek plate",
+  "captured_at": "2026-10-10T17:23:18+00:00",
+  "captured_with": "serve.local on the GPU box (RTX PRO 5000, GPU1), baseline pretrained models",
+  "input": "samples/uz_plate_van.jpg (Roboflow Uzbek_Plates); work order: oil + filter, wash, cabin filter; simulation on",
+  "input_licence": "CC BY 4.0",
+  "file": "samples/recorded/uz_plate_van/result.json",
+  "base": "samples/recorded/uz_plate_van/"
+ }
+]
