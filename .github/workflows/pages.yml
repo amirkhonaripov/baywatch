@@ -1,6 +1,6 @@
 # Build this web app and publish it to GitHub Pages on every push to main.
 # Settings -> Pages -> Source: "GitHub Actions".
-# Settings -> Secrets and variables -> Actions -> Variables: SEEN_API_BASE = URL of the BayWatch API
+# Optional: Settings -> Secrets and variables -> Actions -> Variables: SEEN_API_BASE = URL of the BayWatch API (default below)
 #   (public deployment: https://sanjar--seen-api.modal.run; the API itself lives in the baywatch-core repository).
 name: pages
 
@@ -32,7 +32,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_API_BASE: ${{ vars.SEEN_API_BASE }}
+          VITE_API_BASE: ${{ vars.SEEN_API_BASE || 'https://sanjar--seen-api.modal.run' }}
           VITE_BASE: /${{ github.event.repository.name }}/
       - uses: actions/upload-pages-artifact@v3
         with:
